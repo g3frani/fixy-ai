@@ -361,7 +361,7 @@ homeBtnCircle.addEventListener('click', () => {
 async function sendToBackend(text, mode, tone=null) {
     if(!text) return "Please enter some text!";
     try {
-        const response = await fetch("https://supreme-sniffle-x5pqj966g979f6wpx-3000.app.github.dev/api/fix-text", { // replace with your deployed backend URL
+        const response = await fetch("https://fixy--gghh93253.replit.app/api/fix-text", { // replace with your deployed backend URL
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ text, mode, tone })
